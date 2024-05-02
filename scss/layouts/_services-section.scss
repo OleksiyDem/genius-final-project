@@ -1,0 +1,35 @@
+.services-section {
+  position: relative;
+  background-image: url(../images/services-section-background.svg);
+  background-position: center top;
+  background-size: cover;
+  &__title {
+    text-align: center;
+    padding-top: 32px;
+    margin-bottom: 48px;
+  }
+  &__slider {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    padding-bottom: 96px;
+  }
+  &__container {
+    overflow: hidden;
+  }
+  // &__list {
+  //   to delete
+  //   display: flex;
+  //   gap: 24px;
+  // }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-brand-normal);
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.05em;
+    fill: var(--color-brand-normal);
+  }
+}

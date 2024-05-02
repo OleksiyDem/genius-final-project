@@ -1,0 +1,47 @@
+.header {
+  padding-top: 16px;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-grow: 1;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-grow: 1;
+    // @media screen and (max-width: $bp-desktop) {
+    //   justify-content: space-evenly;
+    //   gap: 0;
+    // }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__basket {
+    background-color: transparent;
+    border: none;
+    fill: var(--color-brand-normal);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover {
+      fill: var(--color-brand-light);
+    }
+    // margin-right: 24px;
+    // stroke: var(--color-primary-dark);
+    // fill: transparent;
+  }
+}

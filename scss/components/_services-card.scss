@@ -1,0 +1,18 @@
+.services-card {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+
+  // to delete
+  // width: 240px;
+
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f9f9ff;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px 0 rgba(24, 24, 23, 0.05);
+  background: linear-gradient(180deg, #fff 0%, #fffbf4 100%);
+  &__image {
+    margin-bottom: 24px;
+  }
+}

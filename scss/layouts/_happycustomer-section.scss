@@ -1,0 +1,23 @@
+.happycustomer-section {
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    // to delete
+    // flex-grow: 1;
+    // display: flex;
+    // gap: 16px;
+
+    margin-bottom: 32px;
+  }
+}

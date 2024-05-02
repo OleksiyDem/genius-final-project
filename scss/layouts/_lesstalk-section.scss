@@ -1,0 +1,55 @@
+.lesstalk-section {
+  &__content {
+    display: flex;
+    gap: 24px;
+  }
+  &__picture {
+    position: relative;
+    margin: 70px 60px 50px 60px;
+    max-width: 512px;
+    max-width: 563px;
+    // background-image: url(../images/lesstalk-section-background.svg);
+    // background-repeat: no-repeat;
+    // background-position: center top;
+    // background-size: cover;
+  }
+  &__dog {
+    position: absolute;
+    top: 20%;
+  }
+  &__video {
+    position: absolute;
+    top: 14%;
+    right: 8%;
+    max-width: 161px;
+    max-height: 123px;
+  }
+  // &__video-container {
+  //   position: relative;
+  //   max-width: 161px;
+  //   max-height: 123px;
+  // }
+  &__video-button {
+    position: absolute;
+    top: 18%;
+    right: 36%;
+    fill: var(--color-primary-light);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &__video-button-text {
+    position: absolute;
+    top: 62%;
+    right: 30%;
+    color: var(--color-primary-light);
+    font-size: 16px;
+    line-height: 1.17;
+  }
+  &__text-block {
+    margin: auto;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+}

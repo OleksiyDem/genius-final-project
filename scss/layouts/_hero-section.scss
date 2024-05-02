@@ -1,0 +1,22 @@
+.hero-section {
+  background-image: url(../images/hero-section-background.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  &__container {
+    display: flex;
+    gap: 65px;
+  }
+  &__content {
+    position: relative;
+    max-width: 635px;
+    margin-top: 212px;
+  }
+  &__text {
+    margin-bottom: 24px;
+  }
+  &__picture {
+    position: relative;
+    margin: 240px auto 60px;
+  }
+}

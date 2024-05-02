@@ -1,0 +1,162 @@
+.background-elements {
+  &__hero-section-arrow {
+    position: absolute;
+    top: -48px;
+    right: 17.3%;
+    fill: var(--color-brand-light);
+    transform: rotate(3.5deg);
+  }
+  &__radius {
+    border-radius: 50%;
+  }
+  &__hero-section-paw-left {
+    position: absolute;
+    left: -17.4%;
+    bottom: 18.9%;
+    fill: var(--color-brand-light);
+    animation-name: paw-left;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
+
+    @keyframes paw-left {
+      0% {
+        fill: var(--color-brand-light);
+      }
+      100% {
+        fill: var(--color-background-element1);
+      }
+    }
+  }
+
+  &__hero-section-paw-top {
+    position: absolute;
+    left: -2.7%;
+    top: 10%;
+    fill: var(--color-background-element1);
+    animation-name: paw-top;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
+
+    @keyframes paw-top {
+      0% {
+        fill: var(--color-background-element1);
+      }
+      100% {
+        fill: var(--color-background-element2);
+      }
+    }
+  }
+
+  &__hero-section-paw-right {
+    position: absolute;
+    top: 38%;
+    right: -10%;
+    fill: var(--color-background-element2);
+    animation-name: paw-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
+
+    @keyframes paw-right {
+      0% {
+        fill: var(--color-background-element2);
+      }
+      100% {
+        fill: var(--color-brand-light);
+      }
+    }
+    // @media screen and (max-width: $bp-desktop) {
+    //   transform: scale(0.5);
+    // }
+  }
+
+  &__hero-section-dog-left {
+    position: absolute;
+    left: -21%;
+    top: 44%;
+    transform: rotate(-31deg);
+    animation-name: dog-left;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    @keyframes dog-left {
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__hero-section-dog-top {
+    position: absolute;
+    top: -10%;
+    left: 18.6%;
+    transform: rotate(-16deg);
+    animation-name: dog-top;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    @keyframes dog-top {
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__hero-section-dog-right {
+    position: absolute;
+    top: 13%;
+    right: -5.5%;
+    animation-name: dog-right;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    @keyframes dog-right {
+      50% {
+        transform: scale(1.15);
+      }
+    }
+  }
+
+  &__lesstalk-section-food {
+    position: absolute;
+    top: 97%;
+    left: 42%;
+    fill: var(--color-brand-dark);
+  }
+  &__lesstalk-section-paw-left {
+    position: absolute;
+    top: 57%;
+    left: 10%;
+    fill: var(--color-brand-dark);
+    &:hover {
+      transform: scale(2);
+    }
+  }
+
+  &__lesstalk-section-paw-top {
+    position: absolute;
+    top: 8%;
+    left: 33%;
+    fill: var(--color-brand-dark);
+    &:hover {
+      transform: scale(2);
+    }
+  }
+
+  &__lesstalk-section-paw-right {
+    position: absolute;
+    top: 45%;
+    left: 82%;
+    fill: var(--color-brand-dark);
+    &:hover {
+      transform: scale(2);
+    }
+  }
+
+  &__services-section-arrow {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    fill: var(--color-brand-light);
+    transform: rotate(3.5deg);
+  }
+}
