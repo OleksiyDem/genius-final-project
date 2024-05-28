@@ -8,6 +8,21 @@
   border-radius: 8px;
   border: var(--color-brand-normal);
   cursor: pointer;
+  &__centered {
+    display: block;
+    margin: 0 auto;
+  }
+  &__footer {
+    padding: 8px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-normal);
+    border-radius: 4px;
+    border: var(--color-brand-normal);
+    cursor: pointer;
+  }
   &:hover {
     background-color: var(--color-brand-light);
     border: var(--color-brand-light);

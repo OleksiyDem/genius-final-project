@@ -472,34 +472,123 @@
 
       </div>
     </section>
-    <section id="contact-section">
+    <section class="contact-section" id="contact-section">
       <div class="container">
-        <h2>Our experts will take care of your friend</h2>
-        <p>Fill out the form so we can contact you!</p>
+        <div class="contact-section__content">
+          <img class="contact-section__dog-left" src="./images/contact-section-dog-left.png"
+            alt="Dog with a collar in teeth">
+          <div class="contact-section__container">
+            <h2 class="form__header">Our experts will take care of your friend</h2>
+            <p class="form__text">Fill out the form so we can contact you!</p>
+            <form name="contact-form" autocomplete="off">
+              <div class="form__field">
+                <svg class="form__icon" height="32" width="32">
+                  <use href="./images/icons.svg#icon-your_name">
+                  </use>
+                </svg>
+                <label class="visually-hidden" for="user-name">Your name</label>
+                <input class="form__input" type="text" id="user-name" placeholder="Your name" pattern="^[a-zA-Z]+$"
+                  required>
+              </div>
+              <div class="form__field">
+                <svg class="form__icon" height="32" width="32">
+                  <use href="./images/icons.svg#icon-pet_name">
+                  </use>
+                </svg>
+                <label class="visually-hidden" for="pet-name">Pet name</label>
+                <input class="form__input" type="text" id="pet-name" placeholder="Pet name" pattern="^[a-zA-Z]+$"
+                  required>
+              </div>
+              <div class="form__field">
+                <svg class="form__icon" height="32" width="32">
+                  <use href="./images/icons.svg#icon-phone">
+                  </use>
+                </svg>
+                <label class="visually-hidden" for="phone">Your phone</label>
+                <input class="form__input" type="tel" id="phone" placeholder="Your phone" pattern="^\+[0-9]{12}"
+                  required>
+              </div>
+              <div class="form__field">
+                <svg class="form__icon" height="32" width="32">
+                  <use href="./images/icons.svg#icon-email">
+                  </use>
+                </svg>
+                <label class="visually-hidden" for="email">Your email</label>
+                <input class="form__input" type="email" id="email" placeholder="Your email" required>
+              </div>
+              <button class="button button__centered" type="submit">Contact us</button>
+
+              <div class="form__terms-container">
+                <input class="form__checkbox" type="checkbox" required>
+                <p class="form__terms"> I agree to the privacy policy </p>
+              </div>
+
+            </form>
+          </div>
+          <img class="contact-section__dog-right" src="./images/contact-section-dog-right.png"
+            alt="Dog with a collar in teeth">
+        </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div>
-        <nav>
-          <div>
-            <a href="/">
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <div class="footer__logo">
+            <a class="footer__image" href="/">
               <img src="./images/logo.svg" alt="DogClub logo">
             </a>
-            <!-- inst&fb icons -->
+            <div>
+              <a href="#">
+                <svg class="footer__icon--instagram" height="32" width="32">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__icon" height="32" width="32">
+                  <use href="./images/icons.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </div>
+
           </div>
 
-          <ul>
+          <ul class="footer__menu link">
             <li><a class="link" href="#lesstalk-section">Less talk</a></li>
             <li><a class="link" href="#services-section">Services category</a></li>
             <li><a class="link" href="#happycustomer-section">Happy customer</a></li>
             <li><a class="link" href="#contact-section">Contact</a></li>
           </ul>
         </nav>
-        <div>
-          <!-- form mini -->
+        <div class="footer__form">
+          <form name="footer-form" autocomplete="off">
+
+            <div class="form__field--footer">
+              <svg class="form__icon--footer" height="24" width="24">
+                <use href="./images/icons.svg#icon-email">
+                </use>
+              </svg>
+              <label class="visually-hidden" for="email">Your email</label>
+              <input class="form__input-footer--with-icon" type="email" id="email" placeholder="Your email" required>
+            </div>
+            <div class="form__field--footer">
+              <label class="visually-hidden" for="cmc">Your cmc</label>
+              <input class="form__input-footer" type="text" id="cmc" placeholder="Your cmc" pattern="^[a-zA-Z]+$"
+                required>
+            </div>
+            <button class="button button__footer button__centered" type="submit">Contact us</button>
+
+            <div class="form__terms-container">
+              <input class="form__checkbox" type="checkbox" required>
+              <p class="form__terms"> I agree to the privacy policy </p>
+            </div>
+
+          </form>
         </div>
+        <img class="footer__dog" src="./images/footer-dog.png" alt="Dog Patron">
       </div>
     </div>
   </footer>
@@ -511,18 +600,57 @@
           </use>
         </svg>
       </button>
-      <h2 class="modal__header">Our experts will take care of your friend</h2>
-      <p class="modal__text">Fill out the form so we can contact you!</p>
+      <h2 class="form__header">Our experts will take care of your friend</h2>
+      <p class="form__text">Fill out the form so we can contact you!</p>
       <form name="modal-form" autocomplete="off">
-        <div class="form__field"></div>
-        <div class="form__field"></div>
-        <div class="form__field"></div>
-        <div class="form__field"></div>
-      </form>
-    </div>
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-your_name">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="user-name">Your name</label>
+          <input class="form__input" type="text" id="user-name" placeholder="Your name" pattern="^[a-zA-Z]+$" required>
+        </div>
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-pet_name">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="pet-name">Pet name</label>
+          <input class="form__input" type="text" id="pet-name" placeholder="Pet name" pattern="^[a-zA-Z]+$" required>
+        </div>
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-phone">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="phone">Your phone</label>
+          <input class="form__input" type="tel" id="phone" placeholder="Your phone" pattern="^\+[0-9]{12}" required>
+        </div>
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-email">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="email">Your email</label>
+          <input class="form__input" type="email" id="email" placeholder="Your email" required>
+        </div>
+        <button class="button button__centered" type="submit">Contact us</button>
 
+        <div class="form__terms-container">
+          <input class="form__checkbox" type="checkbox" required>
+          <p class="form__terms"> I agree to the privacy policy </p>
+        </div>
+
+      </form>
+
+
+    </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+  </script>
   <script src="./js/slider.js"></script>
   <script src="./js/modal.js"></script>
 </body>

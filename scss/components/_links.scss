@@ -3,9 +3,9 @@
   text-decoration: none;
   font-size: 18px;
   line-height: 1.33;
+  letter-spacing: 0.05em;
   &:hover {
     font-weight: 700;
-    letter-spacing: 0.05em;
     color: var(--color-brand-normal);
   }
 }
