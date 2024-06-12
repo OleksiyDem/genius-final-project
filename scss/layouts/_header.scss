@@ -1,34 +1,50 @@
 .header {
   padding-top: 16px;
-  &__container {
-    display: flex;
-    align-items: center;
-  }
-  &__container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
+
+  &__container,
   &__nav {
     display: flex;
     align-items: center;
     gap: 40px;
+    @media screen and (max-width: $bp-desktop) {
+      gap: 10px;
+    }
+  }
+  &__nav {
     flex-grow: 1;
+  }
+  &__logo {
+    width: 182px;
+    height: 43px;
+    @media screen and (max-width: $bp-desktop) {
+      width: 122px;
+      height: 28px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      width: 92px;
+      height: 24px;
+    }
   }
   &__menu {
     display: flex;
     justify-content: center;
     gap: 48px;
     flex-grow: 1;
-    // @media screen and (max-width: $bp-desktop) {
-    //   justify-content: space-evenly;
-    //   gap: 0;
-    // }
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: space-evenly;
+      gap: 0;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
   }
   &__buttons {
     display: flex;
     align-items: center;
     gap: 24px;
+    @media screen and (max-width: $bp-tablet) {
+      gap: 16px;
+    }
   }
   &__basket {
     background-color: transparent;
@@ -37,11 +53,45 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    transition: fill 0.2s;
     &:hover {
       fill: var(--color-brand-light);
     }
-    // margin-right: 24px;
-    // stroke: var(--color-primary-dark);
-    // fill: transparent;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @media screen and (max-width: $bp-desktop) {
+        display: block;
+        background-color: transparent;
+        border: none;
+        fill: var(--color-brand-normal);
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: fill 0.2s;
+        &:hover {
+          fill: var(--color-brand-light);
+        }
+      }
+    }
+  }
+  &__button {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__burger {
+    display: none;
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      fill: var(--color-brand-normal);
+      width: 24px;
+      height: 24px;
+    }
   }
 }

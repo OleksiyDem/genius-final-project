@@ -2,16 +2,26 @@
   &__content {
     display: flex;
     gap: 24px;
+    @media screen and (max-width: $bp-desktop) {
+      margin-top: 20px;
+    }
   }
   &__picture {
+    flex-basis: calc((100% - 24px) / 2);
     position: relative;
     margin: 70px 60px 50px 60px;
     max-width: 512px;
-    max-width: 563px;
+    max-height: 563px;
     // background-image: url(../images/lesstalk-section-background.svg);
     // background-repeat: no-repeat;
     // background-position: center top;
     // background-size: cover;
+    @media screen and (max-width: $bp-desktop) {
+      margin: auto;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
   }
   &__dog {
     position: absolute;
@@ -22,7 +32,10 @@
     top: 14%;
     right: 8%;
     max-width: 161px;
-    max-height: 123px;
+
+    @media screen and (max-width: $bp-desktop) {
+      max-width: 124px;
+    }
   }
   // &__video-container {
   //   position: relative;
@@ -37,6 +50,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    @media screen and (max-width: $bp-desktop) {
+      top: 14%;
+      right: 28%;
+    }
   }
   &__video-button-text {
     position: absolute;
@@ -45,11 +62,47 @@
     color: var(--color-primary-light);
     font-size: 16px;
     line-height: 1.17;
+    @media screen and (max-width: $bp-desktop) {
+      top: 65%;
+      right: 20%;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 8px;
+    }
   }
   &__text-block {
     margin: auto;
+    flex-basis: calc((100% - 24px) / 2);
+    @media screen and (max-width: $bp-tablet) {
+      position: relative;
+      margin: 24px auto 0;
+      flex-basis: 100%;
+    }
   }
   &__title {
     margin-bottom: 40px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+  &__text {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.33333;
+      letter-spacing: 0.05em;
+    }
+  }
+  &__video-mobile {
+    display: none;
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      bottom: -6%;
+      right: 22%;
+      max-width: 73px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      right: 10%;
+    }
   }
 }

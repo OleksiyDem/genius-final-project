@@ -3,16 +3,30 @@
   background-image: url(../images/services-section-background.svg);
   background-position: center top;
   background-size: cover;
+  @media screen and (max-width: $bp-desktop) {
+    margin-top: 20px;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    margin-top: 32px;
+  }
+
   &__title {
     text-align: center;
     padding-top: 32px;
     margin-bottom: 48px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
   }
   &__slider {
     display: flex;
     align-items: flex-end;
     gap: 24px;
     padding-bottom: 96px;
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      padding-bottom: 40px;
+    }
   }
   &__container {
     overflow: hidden;
@@ -31,5 +45,9 @@
     line-height: 1.33;
     letter-spacing: 0.05em;
     fill: var(--color-brand-normal);
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: center;
+      margin-top: 24px;
+    }
   }
 }

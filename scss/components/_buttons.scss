@@ -8,6 +8,7 @@
   border-radius: 8px;
   border: var(--color-brand-normal);
   cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
   &__centered {
     display: block;
     margin: 0 auto;
@@ -26,5 +27,10 @@
   &:hover {
     background-color: var(--color-brand-light);
     border: var(--color-brand-light);
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding: 8px 24px;
+    font-size: 16px;
   }
 }

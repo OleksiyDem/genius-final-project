@@ -5,6 +5,9 @@
     right: 17.3%;
     fill: var(--color-brand-light);
     transform: rotate(3.5deg);
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   &__radius {
     border-radius: 50%;
@@ -12,13 +15,22 @@
   &__hero-section-paw-left {
     position: absolute;
     left: -17.4%;
-    bottom: 18.9%;
+    bottom: 10%;
     fill: var(--color-brand-light);
     animation-name: paw-left;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
-
+    &--mobile {
+      position: absolute;
+      left: 14%;
+      bottom: -17%;
+      fill: var(--color-brand-light);
+      animation-name: paw-left;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
+    }
     @keyframes paw-left {
       0% {
         fill: var(--color-brand-light);
@@ -38,7 +50,16 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
-
+    &--mobile {
+      position: absolute;
+      right: -2.7%;
+      top: 32%;
+      fill: var(--color-background-element1);
+      animation-name: paw-top;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
+    }
     @keyframes paw-top {
       0% {
         fill: var(--color-background-element1);
@@ -52,13 +73,22 @@
   &__hero-section-paw-right {
     position: absolute;
     top: 38%;
-    right: -10%;
+    right: -18%;
     fill: var(--color-background-element2);
     animation-name: paw-right;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
-
+    &--mobile {
+      position: absolute;
+      bottom: -20%;
+      right: 20%;
+      fill: var(--color-background-element2);
+      animation-name: paw-right;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.49, -0.93, 0.45, 1.81);
+    }
     @keyframes paw-right {
       0% {
         fill: var(--color-background-element2);
@@ -80,6 +110,12 @@
     animation-name: dog-left;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    &--mobile {
+      position: absolute;
+      left: -6%;
+      bottom: 0%;
+      transform: rotate(-31deg) scale(0.5);
+    }
     @keyframes dog-left {
       50% {
         transform: scale(1.2);
@@ -95,6 +131,12 @@
     animation-name: dog-top;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    &--mobile {
+      position: absolute;
+      bottom: -26%;
+      left: 43%;
+      transform: rotate(-16deg) scale(0.5);
+    }
     @keyframes dog-top {
       50% {
         transform: scale(1.1);
@@ -109,6 +151,12 @@
     animation-name: dog-right;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    &--mobile {
+      position: absolute;
+      bottom: 0%;
+      right: -6%;
+      transform: scale(0.5);
+    }
     @keyframes dog-right {
       50% {
         transform: scale(1.15);
@@ -125,7 +173,7 @@
   &__lesstalk-section-paw-left {
     position: absolute;
     top: 57%;
-    left: 10%;
+    left: 7%;
     fill: var(--color-brand-dark);
     &:hover {
       transform: scale(2);
@@ -151,6 +199,17 @@
       transform: scale(2);
     }
   }
+  &__lesstalk-section-arrow {
+    display: none;
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 156px;
+      fill: var(--color-brand-light);
+      transform: rotate(3.5deg);
+    }
+  }
 
   &__services-section-arrow {
     position: absolute;
@@ -158,5 +217,8 @@
     right: 0px;
     fill: var(--color-brand-light);
     transform: rotate(3.5deg);
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
