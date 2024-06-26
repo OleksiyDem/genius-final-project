@@ -45,6 +45,11 @@
     line-height: 1.33;
     letter-spacing: 0.05em;
     fill: var(--color-brand-normal);
+    transition: color 0.2s, fill 0.2s;
+    &:hover {
+      color: var(--color-brand-light);
+      fill: var(--color-brand-light);
+    }
     @media screen and (max-width: $bp-tablet) {
       justify-content: center;
       margin-top: 24px;

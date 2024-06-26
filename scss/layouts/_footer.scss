@@ -66,11 +66,19 @@
   }
   &__icon {
     fill: var(--color-brand-normal);
+    transition: fill 0.2s;
+    &:hover {
+      fill: var(--color-brand-light);
+    }
     &--instagram {
       stroke: var(--color-brand-normal);
       background-color: transparent;
       fill: transparent;
       margin-right: 8px;
+      transition: stroke 0.2s;
+      &:hover {
+        stroke: var(--color-brand-light);
+      }
     }
   }
   &__menu-link {

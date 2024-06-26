@@ -9,8 +9,35 @@
     height: 12px;
     border-radius: 50%;
     background-color: var(--color-brand-dark);
+    cursor: pointer;
+    transition: background-color 0.2s;
     &--active {
       background-color: var(--color-brand-normal);
+    }
+  }
+}
+.pagination-nutrition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: min-content;
+
+  &__button {
+    width: 32px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--color-primary-dark);
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
+
+    &--active {
+      background-color: var(--color-brand-normal);
+      color: var(--color-primary-light);
+      border-radius: 2px;
     }
   }
 }

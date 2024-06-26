@@ -23,6 +23,7 @@
     border-radius: 4px;
     border: var(--color-brand-normal);
     cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
   }
   &:hover {
     background-color: var(--color-brand-light);
@@ -32,5 +33,44 @@
   @media screen and (max-width: 1280px) {
     padding: 8px 24px;
     font-size: 16px;
+  }
+  &__nutrition {
+    border-bottom: 1px solid var(--color-brand-dark);
+    border-right: 1px solid var(--color-brand-dark);
+    border-top: 1px solid var(--color-brand-dark);
+    border-left: 0;
+    padding: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    &:first-child {
+      border-radius: 2px 0 0 2px;
+      border-left: 1px solid var(--color-brand-dark);
+    }
+    &:last-child {
+      border-radius: 0 2px 2px 0;
+    }
+    &:focus {
+      color: var(--color-primary-light);
+      background-color: var(--color-brand-normal);
+    }
+  }
+  &__nutrition-mobile-menu {
+    display: flex;
+    border: 0;
+    font-size: 16px;
+    justify-content: space-between;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+      color: var(--color-brand-normal);
+      font-weight: 600;
+    }
+    &:active {
+      color: var(--color-brand-normal);
+      font-weight: 600;
+    }
   }
 }

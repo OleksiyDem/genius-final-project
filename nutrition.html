@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Club</title>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="DogClub logo">
+            </a>
+          </div>
+          <ul class="header__menu">
+            <li><a class="link" href="index.html#lesstalk-section">Less talk</a></li>
+            <li><a class="link" href="index.html#services-section">Services category</a></li>
+            <li><a class="link" href="index.html#happycustomer-section">Happy customer</a></li>
+            <li><a class="link" href="index.html#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__buttons">
+          <button class="header__basket" type="button">
+            <!-- <img src="./images/basket.svg" alt=""> -->
+            <svg height="40" width="40">
+              <use href="./images/icons.svg#icon-basket"></use>
+            </svg>
+          </button>
+          <button class="header__basket--mobile" type="button">
+            <!-- <img src="./images/basket.svg" alt=""> -->
+            <svg height="24" width="24">
+              <use href="./images/icons.svg#icon-basket"></use>
+            </svg>
+          </button>
+          <button class="header__button button modal-btn-open" type="button">Contact us</button>
+          <button class="header__burger menu-btn-open-nutrition" type="button">
+            <svg height="24" width="24">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu-nutrition">
+          <p class="mobile-menu-nutrition__sorting-text">Sorting</p>
+
+          <div class="mobile-menu-nutrition__sorting-buttons">
+            <button class="button__nutrition-mobile-menu menu-btn-close-nutrition" type="button">
+              <span>Popularity</span>
+              <span>></span>
+            </button>
+            <button class="button__nutrition-mobile-menu menu-btn-close1-nutrition" type="button"><span>Cheaper
+                first</span><span>></span></button>
+            <button class="button__nutrition-mobile-menu menu-btn-close2-nutrition" type="button"><span>More expensive
+                first</span><span>></span></button>
+            <button class="button__nutrition-mobile-menu menu-btn-close3-nutrition" type="button"><span>By
+                name</span><span>></span></button>
+            <button class="button__nutrition-mobile-menu menu-btn-close4-nutrition" type="button"><span>New ones
+                first</span><span>></span></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="nutrition-section">
+      <div class="container">
+        <div class="nutrition-section__nav">
+          <h2 class="nutrition-section__title">Nutrition</h2>
+          <div class="nutrition-section__sorting">
+            <p class="nutrition-section__sorting-text">Sorting:</p>
+            <div class="nutrition-section__sorting-buttons">
+              <button class="button__nutrition" type="button">Popularity</button>
+              <button class="button__nutrition" type="button">Cheaper first</button>
+              <button class="button__nutrition" type="button">More expensive first</button>
+              <button class="button__nutrition" type="button">By name</button>
+              <button class="button__nutrition" type="button">New ones first</button>
+            </div>
+          </div>
+          <div class="nutrition-section__sorting-mobile">
+            <svg class="nutrition-section__sorting-mobile-icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-sorting">
+              </use>
+            </svg>
+            <select class="nutrition-section__sorting-mobile-list" name="Sorting" id="Sorting">
+              <option value="Popularity"> Popularity</option>
+              <option value="Cheaper first">Cheaper first</option>
+              <option value="More expensive first">More expensive first</option>
+              <option value="By name">By name</option>
+              <option value="New ones first">New ones first</option>
+            </select>
+          </div>
+        </div>
+        <div class="nutrition-section__container swiper-nutrition">
+          <ul class="nutrition-section__list swiper-wrapper">
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_turkey_and_lamb.jpg 1x, ./images/food_turkey_and_lamb@2x.jpg 2x"
+                  src="./images/food_turkey_and_lamb.jpg" alt="Nutrition (turkey and lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 37875</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon--blank" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image" srcset="./images/food_lamb.jpg 1x, ./images/food_lamb@2x.jpg 2x"
+                  src="./images/food_lamb.jpg" alt="Nutrition (lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 34905</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of small breeds Savory 3 kg (lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">140.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00027</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00028</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">346.00$</p>
+                  <p class="nutrition-card__price-old">450.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image" srcset="./images/food_lamb.jpg 1x, ./images/food_lamb@2x.jpg 2x"
+                  src="./images/food_lamb.jpg" alt="Nutrition (lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 34905</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of small breeds Savory 3 kg (lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">140.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00027</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_turkey_and_lamb.jpg 1x, ./images/food_turkey_and_lamb@2x.jpg 2x"
+                  src="./images/food_turkey_and_lamb.jpg" alt="Nutrition (turkey and lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 37875</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon--blank" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00028</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">346.00$</p>
+                  <p class="nutrition-card__price-old">450.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_turkey_and_lamb.jpg 1x, ./images/food_turkey_and_lamb@2x.jpg 2x"
+                  src="./images/food_turkey_and_lamb.jpg" alt="Nutrition (turkey and lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 37875</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon--blank" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image" srcset="./images/food_lamb.jpg 1x, ./images/food_lamb@2x.jpg 2x"
+                  src="./images/food_lamb.jpg" alt="Nutrition (lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 34905</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of small breeds Savory 3 kg (lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">140.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00027</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00028</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">346.00$</p>
+                  <p class="nutrition-card__price-old">450.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image" srcset="./images/food_lamb.jpg 1x, ./images/food_lamb@2x.jpg 2x"
+                  src="./images/food_lamb.jpg" alt="Nutrition (lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 34905</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of small breeds Savory 3 kg (lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">140.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00027</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_turkey_and_lamb.jpg 1x, ./images/food_turkey_and_lamb@2x.jpg 2x"
+                  src="./images/food_turkey_and_lamb.jpg" alt="Nutrition (turkey and lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 37875</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon--blank" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00028</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">346.00$</p>
+                  <p class="nutrition-card__price-old">450.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_turkey_and_lamb.jpg 1x, ./images/food_turkey_and_lamb@2x.jpg 2x"
+                  src="./images/food_turkey_and_lamb.jpg" alt="Nutrition (turkey and lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 37875</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon--blank" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image" srcset="./images/food_lamb.jpg 1x, ./images/food_lamb@2x.jpg 2x"
+                  src="./images/food_lamb.jpg" alt="Nutrition (lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 34905</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of small breeds Savory 3 kg (lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">140.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00027</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00028</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">346.00$</p>
+                  <p class="nutrition-card__price-old">450.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image" srcset="./images/food_lamb.jpg 1x, ./images/food_lamb@2x.jpg 2x"
+                  src="./images/food_lamb.jpg" alt="Nutrition (lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 34905</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of small breeds Savory 3 kg (lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">140.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00027</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_turkey_and_lamb.jpg 1x, ./images/food_turkey_and_lamb@2x.jpg 2x"
+                  src="./images/food_turkey_and_lamb.jpg" alt="Nutrition (turkey and lamb)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 37875</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon--blank" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">136.00$</p>
+                  <p class="nutrition-card__price-old">320.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="nutrition-card">
+                <img class="nutrition-card__image"
+                  srcset="./images/food_rabbit_and_duck.jpg 1x, ./images/food_rabbit_and_duck@2x.jpg 2x"
+                  src="./images/food_rabbit_and_duck.jpg" alt="Nutrition (rabbit and duck)">
+                <div class="nutrition-card__information">
+                  <h5 class="nutrition-card__code">Vendor code: 00028</h5>
+                  <div class="nutrition-card__stars">
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                    <svg class="nutrition-card__icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-Star-score">
+                      </use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="nutrition-card__text">Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
+                <div class="nutrition-card__price">
+                  <p class="nutrition-card__price-new">346.00$</p>
+                  <p class="nutrition-card__price-old">450.43$</p>
+                </div>
+                <button class="button" type="button">Buy</button>
+              </article>
+            </li>
+          </ul>
+
+          <div class="nutrition-section__slider">
+            <div class="carousel-button-nutrition prev"> > </div>
+            <div class="pagination-nutrition">
+              <div class="pagination-nutrition__button">
+              </div>
+            </div>
+            <div class="carousel-button-nutrition next"> > </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <div class="footer__logo">
+            <a class="footer__image" href="/">
+              <img src="./images/logo.svg" alt="DogClub logo">
+            </a>
+            <div class="footer__icons">
+              <a href="#">
+                <svg class="footer__icon--instagram" height="32" width="32">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__icon" height="32" width="32">
+                  <use href="./images/icons.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+          <ul class="footer__menu">
+            <li class="footer__menu-link link"><a class="link" href="index.html#lesstalk-section">Less talk</a></li>
+            <li class="footer__menu-link link"><a class="link" href="index.html#services-section">Services category</a>
+            </li>
+            <li class="footer__menu-link link"><a class="link" href="index.html#happycustomer-section">Happy
+                customer</a></li>
+            <li class="footer__menu-link link"><a class="link" href="index.html#contact-section">Contact</a></li>
+          </ul>
+          <div class="footer__icons-mobile">
+            <a href="#">
+              <svg class="footer__icon--instagram" height="24" width="24">
+                <use href="./images/icons.svg#icon-instagram">
+                </use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer__icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-facebook">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <div class="footer__form">
+          <form name="footer-form" autocomplete="off">
+
+            <div class="form__field--footer">
+              <svg class="form__icon--footer" height="24" width="24">
+                <use href="./images/icons.svg#icon-email">
+                </use>
+              </svg>
+              <label class="visually-hidden" for="email">Your email</label>
+              <input class="form__input-footer--with-icon" type="email" id="email" placeholder="Your email" required>
+            </div>
+            <div class="form__field--footer">
+              <label class="visually-hidden" for="cmc">Your cmc</label>
+              <input class="form__input-footer" type="text" id="cmc" placeholder="Your cmc" pattern="^[a-zA-Z]+$"
+                required>
+            </div>
+            <button class="button button__footer button__centered" type="submit">Contact us</button>
+
+            <div class="form__terms-container">
+              <input class="form__checkbox" type="checkbox" required>
+              <p class="form__terms"> I agree to the privacy policy </p>
+            </div>
+
+          </form>
+        </div>
+        <img class="footer__dog" srcset="./images/footer-dog.png 1x, ./images/footer-dog@2x.png 2x"
+          src="./images/footer-dog.png" alt="Dog Patron">
+      </div>
+    </div>
+  </footer>
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal__btn-close modal-btn-close" type="button">
+        <svg height="16" width="16">
+          <use href="./images/icons.svg#icon-close">
+          </use>
+        </svg>
+      </button>
+      <h2 class="form__header">Our experts will take care of your friend</h2>
+      <p class="form__text">Fill out the form so we can contact you!</p>
+      <form name="modal-form" autocomplete="off">
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-your_name">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="user-name">Your name</label>
+          <input class="form__input" type="text" id="user-name" placeholder="Your name" pattern="^[a-zA-Z]+$" required>
+        </div>
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-pet_name">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="pet-name">Pet name</label>
+          <input class="form__input" type="text" id="pet-name" placeholder="Pet name" pattern="^[a-zA-Z]+$" required>
+        </div>
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-phone">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="phone">Your phone</label>
+          <input class="form__input" type="tel" id="phone" placeholder="Your phone" pattern="^\+[0-9]{12}" required>
+        </div>
+        <div class="form__field">
+          <svg class="form__icon" height="32" width="32">
+            <use href="./images/icons.svg#icon-email">
+            </use>
+          </svg>
+          <label class="visually-hidden" for="email">Your email</label>
+          <input class="form__input" type="email" id="email" placeholder="Your email" required>
+        </div>
+        <button class="button button__centered" type="submit">Contact us</button>
+
+        <div class="form__terms-container">
+          <input class="form__checkbox" type="checkbox" required>
+          <p class="form__terms"> I agree to the privacy policy </p>
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+
+  <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+  </script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/modal.js"></script>
+  <!-- <script src="./js/mobile-menu.js"></script> -->
+  <script src="./js/mobile-menu-nutrition.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,80 @@
+.nutrition-section {
+  margin: 72px auto;
+  @media screen and (max-width: $bp-tablet) {
+    margin: 32px auto 162px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+    @media screen and (max-width: $bp-desktop) {
+      flex-direction: column;
+      margin-bottom: 32px;
+      gap: 16px;
+      align-items: flex-start;
+    }
+  }
+  &__title {
+    color: var(--color-brand-normal);
+    margin-bottom: 0;
+  }
+  &__sorting {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__sorting-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    letter-spacing: 0.05em;
+    color: var(--color-brand-normal);
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  &__sorting-buttons {
+    display: flex;
+  }
+  &__sorting-mobile {
+    display: none;
+    @media screen and (max-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+  &__sorting-mobile-icon {
+    fill: var(--color-brand-normal);
+  }
+  &__sorting-mobile-list {
+    border: 0;
+    //styleName: Dog landing 3/Н8;
+    font-size: 14px;
+    line-height: 1.17;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    // to delete
+    // flex-grow: 1;
+    // display: flex;
+    // gap: 16px;
+
+    // grid-gap: 16px;
+    // display: grid;
+    // grid-template-columns: 288px 288px 288px 288px;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    margin-bottom: 32px;
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
+    // position: relative;
+    gap: 8px;
+    justify-content: center;
+  }
+}
