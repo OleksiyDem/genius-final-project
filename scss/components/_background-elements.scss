@@ -175,6 +175,7 @@
     top: 57%;
     left: 7%;
     fill: var(--color-brand-dark);
+    transition: transform 0.3s;
     &:hover {
       transform: scale(2);
     }
@@ -185,6 +186,7 @@
     top: 8%;
     left: 33%;
     fill: var(--color-brand-dark);
+    transition: transform 0.3s;
     &:hover {
       transform: scale(2);
     }
@@ -195,6 +197,7 @@
     top: 45%;
     left: 82%;
     fill: var(--color-brand-dark);
+    transition: transform 0.3s;
     &:hover {
       transform: scale(2);
     }
